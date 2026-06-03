@@ -1,0 +1,38 @@
+{
+    "name": "sybase-connector/doctrine-bundle",
+    "description": "Symfony bundle providing Doctrine DBAL integration for SAP SQL Anywhere via PDO_ODBC + FreeTDS",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "doctrine/dbal": "^4.0",
+        "symfony/framework-bundle": "^6.4|^7.0",
+        "symfony/dependency-injection": "^6.4|^7.0",
+        "symfony/config": "^6.4|^7.0"
+    },
+    "suggest": {
+        "doctrine/orm": "To use Doctrine ORM entities with SQL Anywhere"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "symfony/dotenv": "^6.4|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SybaseConnector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SybaseConnector\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false
+        }
+    }
+}
